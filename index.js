@@ -29,6 +29,7 @@ app.post('/', function (req, res) {
 });
 
 app.get('/view-data', function (req, res) {
+    console.log("hello");
     var sql1 = "SELECT * FROM users";
     var sql2 = "SELECT * FROM address";
 
@@ -44,7 +45,7 @@ app.get('/view-data', function (req, res) {
     });
 });
 
-app.listen(7000, () => {
-    console.log("Server is running on port 7000");
+app.listen(process.env.PORT, () => {
+    console.log(`Server is running on port ${process.env.PORT}`);
 });
 
