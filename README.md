@@ -47,5 +47,5 @@ Contributions are welcome! Feel free to open issues and pull requests to improve
 
 ## License
 
-##Acknowledgments
+## Acknowledgments
 
