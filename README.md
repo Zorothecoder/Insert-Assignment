@@ -30,6 +30,7 @@ Before you begin, ensure you have the following prerequisites:
 
 - Node.js and npm installed
 - MySQL server and database set up
+- Refer sql.txt for database query
 
 ### Installation
 
