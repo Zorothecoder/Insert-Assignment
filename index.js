@@ -29,6 +29,7 @@ app.post('/', function (req, res) {
 });
 
 app.get('/view-data', function (req, res) {
+    console.log("hello");
     var sql1 = "SELECT * FROM users";
     var sql2 = "SELECT * FROM address";
 
