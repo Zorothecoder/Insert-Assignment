@@ -1,0 +1,19 @@
+CREATE TABLE `internshala`.`users` ( 
+  `User_id` INT NOT NULL AUTO_INCREMENT , 
+  `Name` VARCHAR(50) NOT NULL , 
+  `Email_id` VARCHAR(50) NOT NULL , 
+  `Gender` VARCHAR(50) NOT NULL , 
+  PRIMARY KEY (`User_id`)
+) ENGINE = InnoDB;
+
+CREATE TABLE `Address` (
+  `Address_id` INT NOT NULL AUTO_INCREMENT,
+  `Address` VARCHAR(60) NOT NULL,
+  `State` VARCHAR(30) NOT NULL,
+  `City` VARCHAR(30) NOT NULL,
+  `Pincode` INT(10) NOT NULL,
+  `User_id` INT NOT NULL,
+  PRIMARY KEY (`address_id`),
+  FOREIGN KEY (`User_id`) REFERENCES `users` (`User_id`)
+) ENGINE = InnoDB;
+
